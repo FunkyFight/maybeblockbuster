@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "blockbuster",
+	"version": "${version}",
+	"name": "blockbuster",
+	"description": "This is a port of Blockbuster, I hope it will come out someday",
+	"authors": [
+		"FunkyFight (port)"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/blockbuster/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"fr.funkyfight.blockbuster.Blockbuster"
+		],
+		"client": [
+			"fr.funkyfight.blockbuster.BlockbusterClient"
+		],
+		"fabric-datagen": [
+			"fr.funkyfight.blockbuster.BlockbusterDataGenerator"
+		]
+	},
+	"mixins": [
+		"blockbuster.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
